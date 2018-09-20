@@ -10,15 +10,23 @@ body {
     align-items: center;
     overflow: hidden;
 
-    perspective: 50px;
+    perspective: 200px;
 }
 
 #floor {
-    width: 200px;
-    height: 200px;
+    width: 70%;
+    height: 70%;
     display: flex;
     vertical-align: middle;
-    background-color: black;
+    background-image: url("img/wooden_planks.jpg");
+    background-repeat: repeat;
+    background-size: 150px;
+    background-position: center;
+    transition: all 0.8s ease;
 
     transform: rotateX(50deg);
+}
+
+#floor:hover {
+    transform: rotateX(40deg);
 }
