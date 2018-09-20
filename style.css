@@ -1,1 +1,24 @@
+body {
+    margin: 0;
+}
 
+#field {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    perspective: 50px;
+}
+
+#floor {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    vertical-align: middle;
+    background-color: black;
+
+    transform: rotateX(50deg);
+}
