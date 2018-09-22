@@ -1,9 +1,15 @@
 body {
     margin: 0;
+    perspective: 200px;
+    overflow: hidden;
 }
 
 div {
     transition: all 0.8s ease;
+}
+
+#field, #floor {
+    transform-style: preserve-3d;
 }
 
 #field {
@@ -11,10 +17,10 @@ div {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;
+}
 
-    perspective: 200px;
+#field:hover {
+    transform: rotateX(-5deg);
 }
 
 #floor {
@@ -22,9 +28,7 @@ div {
     height: 70%;
 
     position: absolute;
-    top: 20vh;
-    display: flex;
-    vertical-align: middle;
+    top: 15vh;
     z-index: 1;
     
     background-image: url("img/wooden_planks.jpg");
@@ -37,16 +41,12 @@ div {
     transform: rotateX(50deg);
 }
 
-#floor:hover {
-    transform: rotateX(40deg);
-}
-
 #back-wall {
-    width: 58%;
-    height: 50%;
+    width: 60%;
+    height: 54%;
 
     position: absolute;
-    top: 0vh;
+    top: -5vh;
     z-index: 2;
 
     background-image: url("img/brick_wall.jpg");
