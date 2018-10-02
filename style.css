@@ -27,6 +27,9 @@ div {
     width: 100%;
     height: 100vh;
 
+    display: flex;
+    justify-content: center;
+
     position: absolute;
     bottom: 0;
 
@@ -35,6 +38,7 @@ div {
     background-position: bottom;
     background-size: 20%;
 
+    transform-style: preserve-3d;
     transform-origin: bottom;
     transform: rotateX(-90deg);
 }
@@ -47,9 +51,9 @@ div {
 }
 
 .side-wall {
-    width: 40%;
+    width: 40vw;
     height: 100%;
-    background-size: 20% 99px;
+    transition: unset;
 
     position: absolute;
     bottom: 0;
@@ -69,4 +73,20 @@ div {
     
     transform-origin: right;
     transform: rotateY(90deg);
+}
+
+#successful-man {
+    width: 4vw;
+    height: 13vw;
+
+    background-image: url("img/successful_man.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    position: absolute;
+    bottom: 15vh;
+
+    transform-origin: bottom;
+    transform: rotateX(90deg);
 }
