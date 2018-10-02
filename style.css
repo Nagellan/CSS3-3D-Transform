@@ -86,6 +86,8 @@ div {
 
     position: absolute;
     bottom: 15vh;
+    
+    transition: unset;
 
     transform-origin: bottom;
     transform: rotateX(90deg);
