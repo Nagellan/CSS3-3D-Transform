@@ -8,12 +8,14 @@ body {
 }
 
 div {
-    transition: all 0.8s ease;
+    transition: transform 0.8s ease;
 }
 
 #field {
     height: 40vh;
     width: 60%;
+
+    background-position-x: center;
 
     transform-style: preserve-3d;
     transform: rotateX(-5deg);
@@ -47,13 +49,15 @@ div {
     background-image: url("img/brick_wall.jpg");
     background-repeat: repeat;
     background-position-y: bottom;
-    background-size: 20%;
+    background-size: 15vw;
 }
 
 .side-wall {
     width: 40vw;
     height: 100%;
     transition: unset;
+
+    background-size: 3vw 8.4vw;
 
     position: absolute;
     bottom: 0;
